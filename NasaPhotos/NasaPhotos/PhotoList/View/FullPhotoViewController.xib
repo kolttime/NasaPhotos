@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullPhotoViewController" customModule="NasaPhotos" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="UOR-b1-gCp" id="n5F-k9-6or"/>
+                <outlet property="scrollView" destination="IBA-Qr-yg6" id="HgA-lv-OAL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBA-Qr-yg6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOR-b1-gCp">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UOR-b1-gCp" firstAttribute="top" secondItem="IBA-Qr-yg6" secondAttribute="top" id="27v-iy-IaQ"/>
+                        <constraint firstItem="UOR-b1-gCp" firstAttribute="leading" secondItem="IBA-Qr-yg6" secondAttribute="leading" id="E7i-HV-Arb"/>
+                        <constraint firstAttribute="trailing" secondItem="UOR-b1-gCp" secondAttribute="trailing" id="Mw7-fv-25F"/>
+                        <constraint firstAttribute="bottom" secondItem="UOR-b1-gCp" secondAttribute="bottom" id="O3s-oK-Crm"/>
+                        <constraint firstItem="UOR-b1-gCp" firstAttribute="centerX" secondItem="IBA-Qr-yg6" secondAttribute="centerX" id="VSo-hs-oGn"/>
+                        <constraint firstItem="UOR-b1-gCp" firstAttribute="centerY" secondItem="IBA-Qr-yg6" secondAttribute="centerY" id="gLH-cR-Xxs"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="R9b-EO-WdP"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IBA-Qr-yg6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JQ1-zp-DuT"/>
+                <constraint firstAttribute="bottom" secondItem="IBA-Qr-yg6" secondAttribute="bottom" id="R0d-5Q-glm"/>
+                <constraint firstItem="IBA-Qr-yg6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c9c-zA-1FL"/>
+                <constraint firstItem="IBA-Qr-yg6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lko-Ng-MPe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
